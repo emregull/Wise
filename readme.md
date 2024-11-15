@@ -1,71 +1,56 @@
-## Proje Adı
+## Project Name
 
-Emre Gül - Sirwiss - Backend Projesi
+Emre Gül - Wise - Backend Project
 
-## Başlangıç
+## Getting Started
 
-Projeyi çalıştırmak için aşağıdaki adımları takip edin.
+Follow the steps below to run the project.
 
-## Gereksinimler
+## Requirements
 
--   Docker
--   Postman
+- Docker
+- Postman
 
-## Kurulum
+## Setup
 
-Bu depoyu indirin veya klonlayın:
+Download or clone this repository:
 
-```bash
-git clone https://github.com/emregull/sirwiss.git
-```
+git clone https://github.com/emregull/wise.git
 
-Gerekli composer dosyalarını indirin:
+Download the required Composer files:
 
-```bash
 composer install
-```
 
-.env dosyasını .env.example gibi düzenleyin:
+Edit the .env file like .env.example:
 
-```bash
 .env
-```
 
-Docker container'larını başlatmak için:
+Start the Docker containers:
 
-```bash
 cd docker
 docker-compose up -d
-```
 
-Laravel projesinin ana dizinine gidin ve migration'ları çalıştırın:
+Navigate to the root directory of the Laravel project and run the migrations:
 
-```bash
 cd ..
 php artisan migrate
-```
 
-Laravel sunucusunu başlatın:
+Start the Laravel server:
 
-```bash
 php artisan serve
-```
 
-Tarayıcıda http://localhost:8000 adresine gidip uygulamayı görüntüleyebilirsiniz.
-(Key oluşturmanız gerekebilir laravel uyarısı ile kolayca 'generate' edip oluşturabilirsiniz.)
+Open your browser and go to http://localhost:8000 to view the application.  
+(You might need to generate a key if prompted by Laravel. You can do this easily by running `php artisan key:generate`.)
 
-yada
+Alternatively, access phpMyAdmin in your browser at:
 
-Tarayıcıda http://localhost:8080 adresine gidip phpmyadmin'e ulaşabilirsiniz.
+http://localhost:8080
 
-Kullanıcı Adı: `sirwiss`
-
-Parola: `sirwiss`
+Username: sirwiss  
+Password: sirwiss
 
 ## Postman
 
-Gerekli Postman koleksiyonuna proje dizininden erişebilirsiniz:
+You can access the required Postman collection from the project directory:
 
-```bash
 Sirwiss - EmreGul.postman_collection
-```
